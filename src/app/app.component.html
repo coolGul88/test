@@ -1,12 +1,4 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to Survey App!
-  </h1>
+<div  class="container center">
+  <router-outlet></router-outlet>
 </div>
-<h2>Choose a survey to begin: </h2>
-<ul *ngFor="let survey of surveys">
-  <li>
-    <h2><a target="_blank" rel="noopener" href="">{{survey.name}}</a></h2>
-</ul>
-

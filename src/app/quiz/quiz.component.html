@@ -1,0 +1,8 @@
+<div class="container" align="center">
+  <h5 align="center"> This is question {{questionIndex}} out of 5 </h5>
+  <p align="center">{{minutes | number: '2.0'}}:{{seconds | number: '2.0'}}</p>
+  <h3 align="center">{{question}}</h3>
+  <textarea style="display: block; margin: 15px" class="form-control rounded-5" rows="10"
+            placeholder="Your answer.." [(ngModel)]="answer"></textarea>
+  <button  type="button" (click)="nextQuestion()" class="btn btn-primary">Next</button>
+</div>

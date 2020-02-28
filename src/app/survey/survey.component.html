@@ -1,0 +1,12 @@
+<div class="row">
+  <h2 align="center">
+    Welcome to Survey App!
+  </h2>
+  <div class="grid l4 center">
+    <h3>Choose a survey to begin: </h3>
+    <ul *ngFor="let survey of surveys">
+      <li>
+        <h3><a href='email' routerLink="email" (click)="setSurvey(survey)">{{survey.name}}</a></h3>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="row">
+  <h3 align="center">Please enter your Email to begin</h3>
+  <form #f="ngForm" (ngSubmit)="submit(f)" ngNativeValidate>
+    <div class="form-group">
+      <label for="inputEmail1">Email address</label>
+      <input type="email" [(ngModel)]="email" name="email" class="form-control" id="inputEmail1"
+             aria-describedby="emailHelp" required aria-required="true"  placeholder="Enter email">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
